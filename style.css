@@ -1,0 +1,14 @@
+:root{
+    --bg: #ffd93d;
+    --paper: #fff8e7;
+    --ink: #1b1b1b;
+    --pink: #ff5c8a;
+    --teal: #2ec4b6;
+    --tomato: #ff6b35;
+    --sky: #7cc6fe;
+    --head: "Bagel Fat One", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+    --body: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,"Segoe UI", sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
