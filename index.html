@@ -21,11 +21,36 @@
                 <p class="fine"> How it works: type an excuse, Mr. Pruitt reacts, then answer his next question. Keep his patience above zero for six rounds.</p>
             </div>
 
-            <div id = "play" hidden></div>
+            <div id = "play" hidden>
             <p><span class="round" id="round"></span><span class="round ban" id="ban"></span></p>
             <label id="ask" for="excuse" style="display:block;font:400clamp(28px,4vw,44px)/1.05 var(--head);margin: 0 0 18px">Whats yor excuse?</label>
-            
+            <input class="field" id="excuse" type="text" maxlength="160" autocomplete="off" placeholder="Type something believable">
+            <p class="err" id="err" hidden></p>
+            <div class="acts"> 
+                <button class="btn" type="button" id="say"> Say it</button>
+                <button class="mini" type="button" id="eyes" title="50% chance of +30 patience, otherwise -15. One use, doesnt cost a round">Puppy eyes (gamble)</button>            </div>
+                <button class="mini" type="button" id="note" title="+25 patience, but he'll catch you if you claim to be sick later. one use.">Fake Doctor's note.</button>
+            </div>
+
+            <p class="hint" id="hint"></p>
+            </div>
+
+            <div id="hint" hidden>
+                <p class="round" id="grade"></p>
+                <h2 id="endTitle"></h2>
+                <p class="lede" id="endText"></p>
+                <div class="receipt" id="receipt"></div>
+                <button class="btn" type="button" id="again"> Try another Excuse</button>
+            </div>
         </section>
+
+        <aside class="stage" id="stage" aria-label="Mr.Pruitt">
+            <svg class="pruitt" viewBox=""
+            
+        </aside>
+
+
     </main>
+<script src="script.js"></script>
 </body>
 </html>

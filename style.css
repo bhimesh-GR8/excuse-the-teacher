@@ -12,3 +12,21 @@
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
 }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme=light])
+    {
+        --bg:#2A2347;
+        --paper:#3B3160;
+        --ink:#FFF8E7;
+        
+    }
+}
+
+html{
+    scroll-padding-top:env(safe-area-inset-top, 0px);
+}
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+
