@@ -19,7 +19,7 @@
         --bg:#2A2347;
         --paper:#3B3160;
         --ink:#FFF8E7;
-        
+        --pink: #ff5c8a;
     }
 }
 
@@ -29,4 +29,58 @@ html{
 *,*::before,*::after{
     box-sizing:border-box;
 }
+
+body {
+    margin:0;
+    background:var(--bg);
+    color: var(--ink);
+    font:500 17px/1.55 var(--body);
+    overflow-x:hidden;
+}
+[hidden]{
+    display:none!important;
+}
+
+.strip{
+    background: var(--ink);
+    color:var(--bg);
+    overflow:hidden;
+    white-space:nowrap;       
+}
+
+.track { 
+    display:inline-block;
+    padding:10px 0;
+    font-weight:800;
+    animation: slide 20s linear infinite;
+
+}
+.track span{
+    margin:0 22px;
+}
+@keyframes slide{slide{to{transform:translateX(-50%);}}}
+
+.hero {
+    max-width:1180px;
+    margin:0 auto;
+    padding:clamp(24px,4vw,56px);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:clamp(24px,4vw,56px);
+    align-items:center;
+}
+
+.tag{
+    display: inline-block;
+    background: var(--pink);
+    box-shadow:4px 4px 0 var(--ink);
+    color: #1b1b1b;
+    border:3px solid var(--ink);
+    padding: 6px 14px;
+    font-weight: 800;
+    transform:rotate(-3deg);
+}
+
+
+
 

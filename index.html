@@ -45,10 +45,38 @@
         </section>
 
         <aside class="stage" id="stage" aria-label="Mr.Pruitt">
-            <svg class="pruitt" viewBox=""
-            
+            <svg class="pruitt" viewBox="0 0 160 176" role="img" aria-label="Mr.Pruitt, a tired teacher with glasess and a mustache">
+                <path d = "M16 176 q4 -36 40 -42 h48 q36 6 40 42 z" fill="#3a5a8c" stroke="#1b1b1b" stroke-width="4"/>
+                <path d="M64 134 l16 16 l16 -16z" fill="#FFF8E7" stroke="#1B1B1B" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M80 150 l-6 8 l6 18 l6 -18z" fill="#FF5C8A" stroke="#1B1B1B" stroke-width="4" stroke-linejoin="round"/>
+                <circle cx="27" cy="84" r="11" fill="#F2B98A" stroke="#1B1B1B" stroke-width="4"/>
+                <circle cx="133" cy="84" r="11" fill="#F2B98A" stroke="#1B1B1B" stroke-width="4"/>
+                <ellipse cx="80" cy="80" rx="52" ry="58" fill="#F2B98A" stroke="#1B1B1B" stroke-width="4"/>
+                <path d="M32 58 q-6 -28 22 -38 M128 58 q6 -28 -22 -38 M70 22 q5 -12 10 0 M82 20 q7 -12 12 2" stroke="#1B1B1B" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <circle class="blush" cx="42" cy="106" r="10" fill="#FF6B35"/><circle class="blush" cx="118" cy="106" r="10" fill="#FF6B35"/>
+                <rect x="26" y="62" width="44" height="32" rx="14" fill="#FFF8E7" stroke="#1B1B1B" stroke-width="4"/>
+                <rect x="90" y="62" width="44" height="32" rx="14" fill="#FFF8E7" stroke="#1B1B1B" stroke-width="4"/>
+                <line x1="70" y1="72" x2="90" y2="72" stroke="#1B1B1B" stroke-width="4"/>
+                <g class="pupils"><circle class="pupil" cx="48" cy="78" r="5" fill="#1B1B1B"/><circle class="pupil" cx="112" cy="78" r="5" fill="#1B1B1B"/></g>
+                <line class="brow l" x1="30" y1="52" x2="68" y2="52" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" style="transform-origin:49px 52px"/>
+                <line class="brow r" x1="92" y1="52" x2="130" y2="52" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" style="transform-origin:111px 52px"/>
+                <path class="vein" d="M110 34 l7 7 m0 -7 l-7 7" stroke="#E03131" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M80 84 q-8 14 0 18 q4 2 8 -2" stroke="#1B1B1B" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M52 112 q14 -12 28 -2 q14 -10 28 2 q-14 12 -28 4 q-14 8 -28 -4z" fill="#5A3A22" stroke="#1B1B1B" stroke-width="3"/>
+                <path id="mouth" d="M66 130 q14 6 28 0" stroke="#1B1B1B" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </svg>            
         </aside>
-
+        <p class="plate">Mr. Pruitt · Room 204</p>
+        <div class="bubble" aria-live="polite"><small>Mr.Pruitt</small>
+        <p id="q">Well? Where's the homework?</p><p class="nq" id="nq"></p>
+        </div>
+        
+        <div class="bubble me"><small>You</small><p id="a">...</p></div>
+        <div class="chips" id="chips" aria-live="polite"></div>
+        
+        <div class="meter-l"><span>patience</span><span id="pct">100%</span>
+        </div>
+        <div class="meter" role="img" aria-label="Mr. Pruitt's patience"><div class="fill" id="fill"></div></div>
 
     </main>
 <script src="script.js"></script>
