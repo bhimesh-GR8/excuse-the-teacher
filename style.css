@@ -79,8 +79,54 @@ body {
     padding: 6px 14px;
     font-weight: 800;
     transform:rotate(-3deg);
+    margin: 0 0 20px;
 }
 
+h1 {
+    font:400 clamp(44px,7vw,96px)/0.98 var(--head);
+    margin: 0 0 20px
+}
 
+h1 mark {
+    background: var(--teal);
+    color: #1b1b1b;
+    padding:0.15 em; 
+    border: 3px solid var(--ink);
+    display:inline-block;
+    transform:rotate(2deg);
+    box-shadow: 5px 5px 0 var(--ink);
+}
 
+h2 {
+    font: 400  (34px,5vw,60px)/1 var(--head);
+    margin: 0 0 16px
+}
+
+.lede {
+    max-width: 46ch;
+    margin: 0 0 28px;
+    font-size: 19px;
+}
+
+.btn {
+    font: 400 22px/1 var(--head);
+    background: var(--tomato);
+    color: #1b1b1b;
+    border: 3px solid var(--ink);
+    transition: transform .1s, box-shadow .1s;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translate(-2px, -2px) rotate(-1deg);
+    box-shadow: 8px 8px 0 var(--ink);
+}
+
+.btn:active:not(:disabled) {
+    transform: translate(6px, 6px) rotate(-1deg);
+    box-shadow: 0 0 0 var(--ink);
+}
+.btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
 
