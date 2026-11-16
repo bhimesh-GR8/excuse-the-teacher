@@ -1,4 +1,5 @@
 # Make the Excuse 
+[Play here](https://excuse-the-teacher.vercel.app)
 
 **A game about lying to your teacher.**
 
