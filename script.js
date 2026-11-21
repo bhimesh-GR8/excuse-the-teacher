@@ -12,32 +12,10 @@
     ban,
     busy = false;
 
-  var words = [
-    "“My dog ate it”",
-    "“It's in the cloud”",
-    "“I thought it was due next week”",
-    "“My printer is haunted”",
-    "“I got sleepy”",
-  ];
-  words.concat(words).forEach(function (w) {
-    var s = document.createElement("span");
-    s.textContent = w;
-    $("track").appendChild(s);
-  });
-
-  var MOUTH = {
-    calm: "M66 130 q14 6 28 0",
-    suspicious: "M66 130 h28",
-    mad: "M64 134 q16 -12 32 0",
-    wow: "M72 130 a8 7 0 1 0 16 0 a8 7 0 1 0 -16 0",
-
-    happy: "M62 128 q18 18 36 0",
-  };
   function setMood(m) {
     var st = $("stage");
     st.classList.remove("suspicious", "mad", "wow", "happy");
     if (m !== "calm") st.classList.add(m);
-    $("mouth").setAttribute("d", MOUTH[m]);
   }
   function show(p) {
     p = Math.max(0, Math.min(100, Math.round(p)));
@@ -157,7 +135,7 @@
         "A pet. Of course. Does it also file your taxes?",
         "Bring the animal in. I have questions. Also treats.",
         "That excuse is older than this school. Bring a new one.",
-        "If a hamster ate it, I'd like the hamster to submit it himself.",
+        "If a hamster ate it, I'd like the hamster to submit it itself.",
       ],
     ),
     C(
@@ -397,9 +375,9 @@
     "Interesting. Wrong, but interesting.",
   ];
   var WAIT = [
-    "Mr. Pruitt is staring at you…",
-    "Mr. Pruitt is polishing his glasses…",
-    "Mr. Pruitt is sighing…",
+    "Mrs. Pruitt is staring at you…",
+    "Mrs. Pruitt is polishing her glasses…",
+    "Mrs. Pruitt is sighing…",
   ];
 
   function judge(text) {
@@ -642,23 +620,23 @@
       }, history[0]);
       var p = Math.max(0, Math.round(patience));
       var W = [
-        "Mr. Pruitt sighs, writes “extension” on a sticky note, and walks away. " +
+        "Mrs. Pruitt sighs, writes “extension” on a sticky note, and walks away. " +
           p +
           "% patience left.",
-        "He closes the gradebook, takes off his glasses, and mutters “see you tomorrow.” " +
+        "She closes the gradebook, takes off her glasses, and mutters “see you tomorrow.” " +
           p +
           "% patience left.",
-        "He is too tired to argue. You're free. For now. " +
+        "She is too tired to argue. You're free. For now. " +
           p +
           "% patience left.",
       ];
       var L = [
-        "His patience hit zero. He hands you a pencil and a very long worksheet.",
-        "He slowly takes off his glasses. That's never good. Detention, 3:15, Room 204.",
-        "He doesn't even yell. He just writes your name on the board. In red.",
+        "Her patience hit zero. She hands you a pencil and a very long worksheet.",
+        "She slowly takes off her glasses. That's never good. Detention, 3:15, Room 204.",
+        "She doesn't even yell. She just writes your name on the board. In red.",
       ];
       $("grade").textContent = "Grade " + g[0] + " · " + g[1];
-      $("endTitle").textContent = won ? "He gave up." : "Detention.";
+      $("endTitle").textContent = won ? "She gave up." : "Detention.";
       $("endText").textContent =
         (won ? W : L)[rnd(0, 2)] +
         " Best excuse: “" +

@@ -3,21 +3,21 @@
 
 **A game about lying to your teacher.**
 
-Mr. Pruitt is waiting. Your homework is missing, and he wants an explanation. Come up with convincing excuses, answer his questions, and try to survive six rounds without losing all his patience.
+Mrs. Pruitt is waiting. Your homework is missing, and she wants an explanation. Come up with convincing excuses, answer her questions, and try to survive six rounds without losing all her patience.
 
-But be careful. Mr. Pruitt remembers everything you say.
+But be careful. Mrs. Pruitt remembers everything you say.
 
 ##  How to Play
 
 1. Click **Start Excusing** to begin.
 
-2. Mr. Pruitt will ask why you haven’t completed your homework.
+2. Mrs. Pruitt will ask why you haven’t completed your homework.
 
 3. Type an excuse, in the text box. Click **Say it** (or press Enter).
 
-4. Mr. Pruitt will judge your excuse. React accordingly.
+4. Mrs. Pruitt will judge your excuse. React accordingly.
 
-5. Answer his follow-up questions. Try to keep his patience above zero.
+5. Answer her follow-up questions. Try to keep her patience above zero.
 
 6. Survive all six rounds to escape detention!
 
@@ -28,7 +28,7 @@ But be careful. Mr. Pruitt remembers everything you say.
 - Memory-based replies and repeated excuse detection.
 - assigned banned topics.
 - Two one‑time special items.
-- Animated Mr. Pruitt, with facial expressions.
+- Illustrated portrait of Mrs. Pruitt.
 - patience meter.
 - Final grades and game receipts.
 - Responsive design.
@@ -55,6 +55,6 @@ make-the-excuse/
 4. Open `index.html` in your browser.
 
 
-**Good luck. Mr. Pruitt is not an easy man to convince.**
+**Good luck. Mrs. Pruitt is not an easy teacher to convince.**
 
 *And please, don't use the dog excuse again.*
